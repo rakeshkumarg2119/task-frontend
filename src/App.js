@@ -5,7 +5,7 @@ function App() {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    fetch("https://taskbackendemp-p0rg8nop.b4a.run/employees")
+    fetch("https://taskbackend-15q4igf0.back4.app/employees")
       .then(res => res.json())
       .then(data => setEmployees(data))
       .catch(err => console.error(err));
